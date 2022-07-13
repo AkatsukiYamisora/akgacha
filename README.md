@@ -8,6 +8,8 @@ GitHub与问题反馈: https://github.com/xulai1001/akgacha
 更新日志
 ======
 ### 2022
+- 7.3 修正读取限定池失败的问题。改进抽卡画面使用半身图展示结果，需要res/img/akgacha/half里的半身图资源
+- 6.27 尝试改进风控问题，优化了蹲饼和游戏公告查询功能。 
 - 6.23 重新整理了更新日志，增加了查询素材的命令范围。提交到Hoshino plugin index.
 - 6月  将一图流修改为使用selenium实时获取
 - 较早的更新内容：
@@ -48,6 +50,8 @@ GitHub与问题反馈: https://github.com/xulai1001/akgacha
 
 [蹲饼/取消蹲饼] 开启、关闭蹲饼推送
 
+[游戏公告] 查看方舟官方游戏公告
+
 [方舟素材|材料|刷图] 显示ark.yituliu.site的素材效率一图流，实时更新。注意：此功能需要配置chromedriver和selenium
 
 [方舟dps 干员名] 跳转到DPS计算器的指定干员
@@ -57,7 +61,9 @@ GitHub与问题反馈: https://github.com/xulai1001/akgacha
 安装
 ======
 - 将本项目放在hoshino/modules/目录下
-- res.zip为头像数据，解压在Hoshino根目录下(头像路径为res/img/akgacha/*.png)
+- res目录为抽卡相关素材。放在Hoshino的res文件夹下。
+- 使用“更新方舟基础数据”“更新方舟资源”“更新方舟卡池”载入卡池数据
+- 素材一图流需要配置chrome/chromedriver/selenium才能使用
 
 说明
 ======
